@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import MessageCenter from "./components/MessageCenter";
+import Sidebar from "./components/Sidebar";
+import Uploader from "./components/Uploader";
 
 function App() {
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-gray-200 min-h-full scroll-smooth">
+      <Header />
+      <Sidebar />
+      <div className="absolute inset-y-0 right-10 top-20 w-1/3">
+      <Uploader/>
+      </div>
+      
+      <div className="absolute min-h-[50%] min-w-[50%] top-[48rem] inset-x-1/4 m-5">
+      <h1 className='text-4xl p-2'>Message Center</h1>
+      <MessageCenter/>
+      </div>
     </div>
   );
 }
