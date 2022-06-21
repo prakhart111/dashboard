@@ -15,7 +15,7 @@ const Message = (props) => {
   return (
     <div className='flex content-start rounded items-start w-[95%] m-2'>
         <div className="avatar basis-[1/10] min-w-[64px]">
-               <img src={ props.avatar ==2? Man2:Man } alt='' width='80%'/>
+               <img src={ parseInt(props.avatar) === 2? Man2:Man } alt='' width='80%'/>
             </div>
         <div className="content flex flex-col">
             <div className="sender flex">

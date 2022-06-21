@@ -49,7 +49,7 @@ const UploadBox = ({onUpload}) => {
 
   return (
     <div ref={drop} className='flex flex-col items-center justify-center m-5 mt-10 p-10 bg-purple-100 rounded border-dashed border-2 border-indigo-400'>
-    <img width='30%' className="p-1" 
+    <img width='30%' className="p-1" alt='' 
     src={!dragActive?"https://img.icons8.com/external-becris-lineal-becris/64/undefined/external-upload-mintab-for-ios-becris-lineal-becris.png":
     `${greenLogo}`}/>
 
